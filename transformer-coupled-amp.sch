@@ -1,0 +1,180 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Transformer coupled amplifier"
+Date "2021-04-26"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:R R?
+U 1 1 60876080
+P 2150 3050
+F 0 "R?" H 2220 3096 50  0000 L CNN
+F 1 "150" H 2220 3005 50  0000 L CNN
+F 2 "" V 2080 3050 50  0001 C CNN
+F 3 "~" H 2150 3050 50  0001 C CNN
+	1    2150 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:DIN-3 J?
+U 1 1 60873606
+P 1450 2900
+F 0 "J?" V 1496 2670 50  0000 R CNN
+F 1 "DIN-3" V 1405 2670 50  0000 R CNN
+F 2 "" H 1450 2900 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/18/40_c091_abd_e-75918.pdf" H 1450 2900 50  0001 C CNN
+	1    1450 2900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1450 3200 1450 3350
+Wire Wire Line
+	1450 3350 2150 3350
+Wire Wire Line
+	2150 3350 2150 3200
+Wire Wire Line
+	2150 2900 2150 2400
+Wire Wire Line
+	2150 2400 1450 2400
+Wire Wire Line
+	1450 2400 1450 2600
+$Comp
+L Device:R_POT RV?
+U 1 1 6087810F
+P 2150 3750
+F 0 "RV?" H 2081 3796 50  0000 R CNN
+F 1 "R_POT" H 2081 3705 50  0000 R CNN
+F 2 "" H 2150 3750 50  0001 C CNN
+F 3 "~" H 2150 3750 50  0001 C CNN
+	1    2150 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 3600 2150 3350
+Connection ~ 2150 3350
+Wire Wire Line
+	1150 2900 1150 4000
+Wire Wire Line
+	1150 4000 2150 4000
+Wire Wire Line
+	2150 4000 2150 3900
+$Comp
+L Device:CP C?
+U 1 1 60878C35
+P 2600 3550
+F 0 "C?" H 2482 3504 50  0000 R CNN
+F 1 "CP" H 2482 3595 50  0000 R CNN
+F 2 "" H 2638 3400 50  0001 C CNN
+F 3 "~" H 2600 3550 50  0001 C CNN
+	1    2600 3550
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	2600 3700 2600 3750
+Wire Wire Line
+	2600 3750 2300 3750
+$Comp
+L Device:R R?
+U 1 1 60879116
+P 2600 2050
+F 0 "R?" H 2670 2096 50  0000 L CNN
+F 1 "150" H 2670 2005 50  0000 L CNN
+F 2 "" V 2530 2050 50  0001 C CNN
+F 3 "~" H 2600 2050 50  0001 C CNN
+	1    2600 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C?
+U 1 1 60879DE7
+P 2150 1750
+F 0 "C?" V 1895 1750 50  0000 C CNN
+F 1 "CP" V 1986 1750 50  0000 C CNN
+F 2 "" H 2188 1600 50  0001 C CNN
+F 3 "~" H 2150 1750 50  0001 C CNN
+	1    2150 1750
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	2600 1750 2300 1750
+Wire Wire Line
+	2600 1750 2600 1900
+$Comp
+L power:GND #PWR?
+U 1 1 6087BC2B
+P 1750 1800
+F 0 "#PWR?" H 1750 1550 50  0001 C CNN
+F 1 "GND" H 1755 1627 50  0000 C CNN
+F 2 "" H 1750 1800 50  0001 C CNN
+F 3 "" H 1750 1800 50  0001 C CNN
+	1    1750 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 1750 1750 1750
+Wire Wire Line
+	1750 1750 1750 1800
+Wire Wire Line
+	2600 3400 2600 3200
+$Comp
+L Device:Q_PNP_BEC Q?
+U 1 1 6086D789
+P 3200 3200
+F 0 "Q?" H 3390 3246 50  0000 L CNN
+F 1 "МП41А" H 3390 3155 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-11-3" H 3400 3300 50  0001 C CNN
+F 3 "~" H 3200 3200 50  0001 C CNN
+	1    3200 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 3200 3000 3200
+Connection ~ 2600 3200
+Wire Wire Line
+	2600 3200 2600 2200
+$Comp
+L Device:R R?
+U 1 1 6086E11E
+P 3300 3650
+F 0 "R?" H 3370 3696 50  0000 L CNN
+F 1 "350" H 3370 3605 50  0000 L CNN
+F 2 "" V 3230 3650 50  0001 C CNN
+F 3 "~" H 3300 3650 50  0001 C CNN
+	1    3300 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 3400 3300 3500
+Wire Wire Line
+	2150 4000 3300 4000
+Wire Wire Line
+	3300 4000 3300 3800
+Connection ~ 2150 4000
+$Comp
+L Device:R R?
+U 1 1 6086EC32
+P 3300 2050
+F 0 "R?" H 3370 2096 50  0000 L CNN
+F 1 "6.2K" H 3370 2005 50  0000 L CNN
+F 2 "" V 3230 2050 50  0001 C CNN
+F 3 "~" H 3300 2050 50  0001 C CNN
+	1    3300 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 2200 3300 3000
+Wire Wire Line
+	2600 1750 3300 1750
+Wire Wire Line
+	3300 1750 3300 1900
+Connection ~ 2600 1750
+$EndSCHEMATC
