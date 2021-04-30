@@ -626,7 +626,7 @@ Wire Wire Line
 Wire Wire Line
 	14800 2600 14150 2600
 Wire Wire Line
-	14800 2250 14800 2600
+	14800 2100 14800 2600
 $Comp
 L Device:CP C13
 U 1 1 6091B3E0
@@ -640,16 +640,16 @@ F 3 "https://www.chipdip.by/product0/9000565916" H 14800 3050 50  0001 C CNN
 $EndComp
 Connection ~ 13250 1350
 Wire Wire Line
-	14800 1350 14800 1950
+	14800 1350 14800 1800
 $Comp
 L Device:CP C12
 U 1 1 60915EDC
-P 14800 2100
-F 0 "C12" H 14682 2054 50  0000 R CNN
-F 1 "500u x 25V" H 14682 2145 50  0000 R CNN
-F 2 "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm" H 14838 1950 50  0001 C CNN
-F 3 "https://www.chipdip.by/product0/9000565916" H 14800 2100 50  0001 C CNN
-	1    14800 2100
+P 14800 1950
+F 0 "C12" H 14682 1904 50  0000 R CNN
+F 1 "500u x 25V" H 14682 1995 50  0000 R CNN
+F 2 "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm" H 14838 1800 50  0001 C CNN
+F 3 "https://www.chipdip.by/product0/9000565916" H 14800 1950 50  0001 C CNN
+	1    14800 1950
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
@@ -1002,4 +1002,26 @@ F 3 "~" H 8000 1150 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	8000 1150 8000 1250
+$Comp
+L Mechanical:Heatsink HS1
+U 1 1 608E04E9
+P 13500 1950
+F 0 "HS1" H 13642 2071 50  0000 L CNN
+F 1 "Heatsink" H 13642 1980 50  0000 L CNN
+F 2 "Heatsink:Heatsink_62x40mm_2xFixation3mm" H 13512 1950 50  0001 C CNN
+F 3 "~" H 13512 1950 50  0001 C CNN
+	1    13500 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Heatsink HS2
+U 1 1 608E06E7
+P 13500 2950
+F 0 "HS2" H 13642 3071 50  0000 L CNN
+F 1 "Heatsink" H 13642 2980 50  0000 L CNN
+F 2 "Heatsink:Heatsink_62x40mm_2xFixation3mm" H 13512 2950 50  0001 C CNN
+F 3 "~" H 13512 2950 50  0001 C CNN
+	1    13500 2950
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
