@@ -693,7 +693,7 @@ U 1 1 608E80CD
 P 13150 2100
 F 0 "Q8" H 13340 2146 50  0000 L CNN
 F 1 "П213Б" H 13340 2055 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-3" H 13350 2200 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 13350 2200 50  0001 C CNN
 F 3 "~" H 13150 2100 50  0001 C CNN
 	1    13150 2100
 	1    0    0    -1  
@@ -714,7 +714,7 @@ U 1 1 608DEEA3
 P 13150 3100
 F 0 "Q9" H 13340 3146 50  0000 L CNN
 F 1 "П213Б" H 13340 3055 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-3" H 13350 3200 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 13350 3200 50  0001 C CNN
 F 3 "~" H 13150 3100 50  0001 C CNN
 	1    13150 3100
 	1    0    0    -1  
@@ -884,7 +884,7 @@ U 1 1 6088334F
 P 10100 2700
 F 0 "T1" H 10100 3081 50  0000 C CNN
 F 1 "Transformer_1P_1S" H 10100 2990 50  0000 C CNN
-F 2 "Transformer_THT:Transformer_Breve_TEZ-44x52" H 10100 2700 50  0001 C CNN
+F 2 "footprints:Transformer_44x40" H 10100 2700 50  0001 C CNN
 F 3 "~" H 10100 2700 50  0001 C CNN
 	1    10100 2700
 	1    0    0    -1  
@@ -1002,26 +1002,4 @@ F 3 "~" H 8000 1150 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	8000 1150 8000 1250
-$Comp
-L Mechanical:Heatsink HS1
-U 1 1 608E04E9
-P 13500 1950
-F 0 "HS1" H 13642 2071 50  0000 L CNN
-F 1 "Heatsink" H 13642 1980 50  0000 L CNN
-F 2 "Heatsink:Heatsink_62x40mm_2xFixation3mm" H 13512 1950 50  0001 C CNN
-F 3 "~" H 13512 1950 50  0001 C CNN
-	1    13500 1950
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:Heatsink HS2
-U 1 1 608E06E7
-P 13500 2950
-F 0 "HS2" H 13642 3071 50  0000 L CNN
-F 1 "Heatsink" H 13642 2980 50  0000 L CNN
-F 2 "Heatsink:Heatsink_62x40mm_2xFixation3mm" H 13512 2950 50  0001 C CNN
-F 3 "~" H 13512 2950 50  0001 C CNN
-	1    13500 2950
-	1    0    0    -1  
-$EndComp
 $EndSCHEMATC
